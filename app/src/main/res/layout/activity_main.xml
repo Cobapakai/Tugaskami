@@ -9,6 +9,7 @@
     tools:context=".MainActivity">
 
    <ImageView
+       android:id="@+id/logologin"
        android:layout_width="100dp"
        android:layout_height="100dp"
        android:layout_gravity="center_horizontal"
@@ -21,6 +22,7 @@
        android:paddingBottom="10dp">
 
       <EditText
+          android:id="@+id/loginUsername"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:autofillHints="emailAddress"
@@ -34,6 +36,7 @@
        android:paddingBottom="10dp">
 
       <EditText
+          android:id="@+id/loginPassword"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
           android:hint="Password"
@@ -41,6 +44,7 @@
    </com.google.android.material.textfield.TextInputLayout>
 
    <Button
+       android:id="@+id/ButtonLogin"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_marginTop="10dp"
