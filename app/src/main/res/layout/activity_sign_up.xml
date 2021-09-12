@@ -65,4 +65,13 @@
         android:layout_height="wrap_content"
         android:hint="Daftar"/>
 
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttondaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Sudah Punya Akun? Silahkan Login"/>
+
 </RelativeLayout>
