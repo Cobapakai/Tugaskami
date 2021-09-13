@@ -8,12 +8,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
 
     EditText etTambahNama, etTambahUsername, etTambahPassword, etTambahEmail;
     Button buttondaftar;
     TextView tvLogin;
+    String Name, Username, Password, Email;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,12 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.buttondaftar:
+                Name = etTambahNama.getText().toString();
+                Username = etTambahUsername.getText().toString();
+                Email = etTambahEmail.getText().toString();
+                Password = etTambahPassword.getText().toString();
+                daftar(Name, Username, Password, Email);
+
                 break;
             case R.id.tvLogin:
                 Intent intent = new Intent(this,Login.class);
@@ -43,5 +51,13 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
 
         }
 
+        Toast.makeText(Sign_Up.this, "Selamat Anda Sudah Mendaftar, Silahkan Login Kembali", Toast.LENGTH_SHORT).show();
+
+    }
+
+    private void daftar(String name, String username, String password, String email) {
+        Intent intent = new Intent(this, Login.class);
+        startActivity(intent);
+        finish();
     }
 }

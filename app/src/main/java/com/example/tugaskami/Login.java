@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Login extends AppCompatActivity implements View.OnClickListener {
 
@@ -37,7 +38,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
             case R.id.ButtonLogin:
                 Username = loginUsername.getText().toString();
                 Password = loginPassword.getText().toString();
-                login();
+                login(Username, Password);
                 break;
             case R.id.tvDaftar:
                 Intent intent = new Intent(this, Sign_Up.class);
@@ -45,9 +46,11 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
 
+        Toast.makeText(Login.this, "Selamat Datang", Toast.LENGTH_SHORT).show();
+
     }
 
-    private void login() {
+    private void login(String username, String password) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
