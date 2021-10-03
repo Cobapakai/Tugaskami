@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".Sign_Up">
+
+    <TextView
+        android:id="@+id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:text="Sign Up"/>
+
+    <EditText
+        android:id="@+id/etTambahNama"
+        android:layout_marginTop="25dp"
+        android:layout_below="@id/tvSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:drawableStart="@drawable/ic_tambah_person24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/etTambahUsername"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etTambahNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"
+        android:drawableStart="@drawable/ic_tambah_person24"
+        android:drawablePadding="5dp"/>
+
+    <EditText
+        android:id="@+id/etTambahEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTambahUsername"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="5dp"
+        android:hint="E-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etTambahPassword"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/etTambahEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:drawableStart="@drawable/ic_password_24"
+        android:drawablePadding="5dp"/>
+
+    <Button
+        android:id="@+id/buttondaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etTambahPassword"
+        android:layout_marginTop="20dp"
+        android:text="Daftar" />
+
+    <TextView
+        android:id="@+id/tvLogin"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/buttondaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="Sudah Punya Akun? Silahkan Login"/>
+
+</RelativeLayout>
