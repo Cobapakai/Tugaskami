@@ -43,7 +43,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
                 Email = etTambahEmail.getText().toString();
                 Password = etTambahPassword.getText().toString();
                 daftar(Name, Username, Password, Email);
-
+                Toast.makeText(Sign_Up.this, "Selamat Anda Sudah Mendaftar, Silahkan Login Kembali", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tvLogin:
                 Intent intent = new Intent(this,Login.class);
@@ -51,7 +51,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
 
         }
 
-        Toast.makeText(Sign_Up.this, "Selamat Anda Sudah Mendaftar, Silahkan Login Kembali", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(Sign_Up.this, "Selamat Anda Sudah Mendaftar, Silahkan Login Kembali", Toast.LENGTH_SHORT).show();
 
     }
 

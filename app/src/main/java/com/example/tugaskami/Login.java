@@ -39,6 +39,7 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 Username = loginUsername.getText().toString();
                 Password = loginPassword.getText().toString();
                 login(Username, Password);
+                Toast.makeText(Login.this, "Selamat Datang", Toast.LENGTH_SHORT).show();
                 break;
             case R.id.tvDaftar:
                 Intent intent = new Intent(this, Sign_Up.class);
@@ -46,12 +47,12 @@ public class Login extends AppCompatActivity implements View.OnClickListener {
                 break;
         }
 
-        Toast.makeText(Login.this, "Selamat Datang", Toast.LENGTH_SHORT).show();
+//        Toast.makeText(Login.this, "Selamat Datang", Toast.LENGTH_SHORT).show();
 
     }
 
     private void login(String username, String password) {
-        Intent intent = new Intent(this, MainActivity.class);
+        Intent intent = new Intent(this, Menu.class);
         startActivity(intent);
     }
 }
