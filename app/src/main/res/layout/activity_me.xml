@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Me">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="41dp"
+        android:background="@color/blue"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:layout_width="81dp"
+            android:layout_height="75dp"
+            android:src="@drawable/ic_me_kuning" />
+
+        <TextView
+            android:layout_width="149dp"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="ME"
+            android:textSize="25sp"/>
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/user"
+        android:layout_width="131dp"
+        android:layout_height="132dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_photo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="302dp"
+        android:layout_marginBottom="41dp"
+        android:background="#E6E6E6"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/mapView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="49dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="Nama : " />
+
+
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="50dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="TTL : " />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="49dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="Jenis Kelamin : " />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="49dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="No. HP : " />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="49dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="Email : " />
+
+        <TextView
+            android:layout_width="133dp"
+            android:layout_height="49dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center_vertical"
+            android:text="Alamat : " />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
