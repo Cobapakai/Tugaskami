@@ -10,29 +10,31 @@
         android:id="@+id/tvSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Sign Up"
         android:textAlignment="center"
-        android:textSize="20sp"
-        android:text="Sign Up"/>
+        android:textSize="25sp"
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/etTambahNama"
-        android:layout_marginTop="25dp"
-        android:layout_below="@id/tvSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nama"
+        android:layout_below="@id/tvSignUp"
+        android:layout_marginTop="25dp"
         android:drawableStart="@drawable/ic_tambah_person24"
-        android:drawablePadding="5dp"/>
+        android:drawablePadding="5dp"
+        android:hint="Nama" />
 
     <EditText
         android:id="@+id/etTambahUsername"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/etTambahNama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Username"
+        android:layout_below="@id/etTambahNama"
+        android:layout_marginTop="15dp"
         android:drawableStart="@drawable/ic_tambah_person24"
-        android:drawablePadding="5dp"/>
+        android:drawablePadding="5dp"
+        android:hint="Username" />
 
     <EditText
         android:id="@+id/etTambahEmail"
@@ -47,14 +49,14 @@
 
     <EditText
         android:id="@+id/etTambahPassword"
-        android:layout_marginTop="15dp"
-        android:layout_below="@id/etTambahEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Password"
-        android:inputType="textPassword"
+        android:layout_below="@id/etTambahEmail"
+        android:layout_marginTop="15dp"
         android:drawableStart="@drawable/ic_password_24"
-        android:drawablePadding="5dp"/>
+        android:drawablePadding="5dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/buttondaftar"
@@ -62,7 +64,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/etTambahPassword"
         android:layout_marginTop="20dp"
-        android:text="Daftar" />
+        android:text="Daftar"
+        android:textStyle="bold"/>
 
     <TextView
         android:id="@+id/tvLogin"

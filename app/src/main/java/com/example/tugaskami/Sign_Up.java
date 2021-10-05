@@ -51,7 +51,7 @@ public class Sign_Up extends AppCompatActivity implements View.OnClickListener {
 
         }
 
-//        Toast.makeText(Sign_Up.this, "Selamat Anda Sudah Mendaftar, Silahkan Login Kembali", Toast.LENGTH_SHORT).show();
+//       Toast.makeText(Sign_Up.this, "Selamat Anda Sudah Mendaftar, Silahkan Login Kembali", Toast.LENGTH_SHORT).show();
 
     }
 
