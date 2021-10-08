@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient1"
     tools:context=".Setting">
 
     <androidx.appcompat.widget.Toolbar
-        android:background="#71C9CE"
+        android:background="#001E6C"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <LinearLayout
@@ -17,17 +18,22 @@
             android:layout_height="wrap_content">
 
             <ImageButton
-                android:layout_width="93dp"
-                android:layout_height="74dp"
-                android:src="@drawable/left"
-                tools:ignore="SpeakableTextPresentCheck" />
-            <TextView
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:src="@drawable/ic_baseline_arrow_back_24"
+                android:scaleType="fitCenter"
+                android:background="@null" />
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:fontFamily="sans"
+                android:textColor="#39A2DB"
                 android:text="Setting"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_gravity="center_vertical"/>
         </LinearLayout>
     </androidx.appcompat.widget.Toolbar>
 </LinearLayout>
