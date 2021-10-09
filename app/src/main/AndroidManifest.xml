@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugaskami">
         <activity
+            android:name=".Message"
+            android:exported="true" />
+        <activity
             android:name=".Me"
             android:exported="true" />
         <activity
