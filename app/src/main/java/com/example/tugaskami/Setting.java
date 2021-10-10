@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Setting extends AppCompatActivity implements View.OnClickListener {
     ImageButton kembali;
@@ -38,7 +39,21 @@ public class Setting extends AppCompatActivity implements View.OnClickListener {
         if (view.getId() == R.id.kembali) {
             Intent kembali = new Intent(this, Menu.class);
             startActivity(kembali);
+        } else if (view.getId() == R.id.account) {
+            Intent account = new Intent(this, Menu.class);
+            startActivity(account);
+        } else if (view.getId() == R.id.help) {
+            Intent help = new Intent(this,Menu.class);
+            startActivity(help);
+        } else if (view.getId() == R.id.about) {
+            Intent about = new Intent(this, Menu.class);
+            startActivity(about);
+        } else if (view.getId() == R.id.logout) {
+            Intent logout = new Intent(this, Login.class);
+            startActivity(logout);
+            Toast.makeText(Setting.this, "Terima Kasih Anda Sudah Log Out", Toast.LENGTH_SHORT).show();
         }
+
 
     }
 
