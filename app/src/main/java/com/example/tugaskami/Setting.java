@@ -35,12 +35,9 @@ public class Setting extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.kembali:
-                Intent kembali = new Intent(this, Menu.class);
-                startActivity(kembali);
-                break;
-
+        if (view.getId() == R.id.kembali) {
+            Intent kembali = new Intent(this, Menu.class);
+            startActivity(kembali);
         }
 
     }

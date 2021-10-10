@@ -33,31 +33,22 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.profil:
-                Intent intent = new Intent(this, Me.class);
-                startActivity(intent);
-                break;
-
-            case R.id.pengaturan:
-                Intent pengaturan = new Intent(this, Setting.class);
-                startActivity(pengaturan);
-                break;
-
-            case R.id.map:
-                Intent map = new Intent(this, Me.class);
-                startActivity(map);
-                break;
-
-            case R.id.pesan:
-                Intent pesan = new Intent(this, Me.class);
-                startActivity(pesan);
-                break;
-
-            case R.id.history:
-                Intent history = new Intent(this, Me.class);
-                startActivity(history);
-                break;
+        int id = view.getId();
+        if (id == R.id.profil) {
+            Intent intent = new Intent(this, Me.class);
+            startActivity(intent);
+        } else if (id == R.id.pengaturan) {
+            Intent pengaturan = new Intent(this, Setting.class);
+            startActivity(pengaturan);
+        } else if (id == R.id.map) {
+            Intent map = new Intent(this, Me.class);
+            startActivity(map);
+        } else if (id == R.id.pesan) {
+            Intent pesan = new Intent(this, Message.class);
+            startActivity(pesan);
+        } else if (id == R.id.history) {
+            Intent history = new Intent(this, Me.class);
+            startActivity(history);
         }
 
     }
