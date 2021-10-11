@@ -20,6 +20,15 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0">
 
+        <ImageButton
+            android:id="@+id/kembali"
+            android:layout_width="63dp"
+            android:layout_height="49dp"
+            android:src="@drawable/ic_back_white"
+            android:scaleType="fitCenter"
+            android:background="@null"
+            android:layout_gravity="center_vertical"/>
+
         <ImageView
             android:layout_width="81dp"
             android:layout_height="75dp"
